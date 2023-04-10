@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react"
+import { useDispatch } from "react-redux";
 import {AiFillStar, AiFillAlert} from 'react-icons/ai'
 import api from "../../services/api";
 import './home.css'
 
 export default function Home(){
 
+    const dispatch = useDispatch();
     const [trips, setTrips] = useState<any[]>([]);
     
     useEffect(()=>{
@@ -15,6 +17,12 @@ export default function Home(){
         loadApi();
     }, []);
 
+    async function handleAdd(trip: any){
+        dispatch({
+            type: 'ADD_RESERVE',
+            trip
+        })
+    }
 
     return(
         <div className="container_home">
@@ -28,7 +36,7 @@ export default function Home(){
                         <span>{trip.status ? <AiFillAlert  color="green"/>: <AiFillAlert color="red"/>} {trip.status ? 'Disponivel': 'Indisponivel'}</span>
                         
                         <span>R$ {trip.price},00 p/ noite.</span>
-                        <button disabled={trip.status === false}>{trip.status ? 'Reservar' : 'Indisponivel' }</button>
+                        <button disabled={trip.status === false} onClick={() => handleAdd(trip)}>{trip.status ? 'Reservar' : 'Indisponivel' }</button>
                     </li>
                 ))}
             </div>

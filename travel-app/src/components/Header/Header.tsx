@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom"
 import {FaRegPaperPlane} from 'react-icons/fa'
+import { useSelector } from "react-redux"
 import './header.css'
 
 export default function Header(){
+    
+    const reserveSizer:any = useSelector<any>(state => state.reserve);
+
     return(   
         <header className="container_header">
             <div className="logo">
@@ -12,8 +16,9 @@ export default function Header(){
             
             <nav className="nav">
                 <Link to="/">Home</Link>
-                <Link to="/reservas">Reservas</Link>
                 <Link to="/sobre">Sobre</Link>
+                <Link to="/reservas">Reservas <span>{reserveSizer.length ? reserveSizer.length : ''}</span></Link>
+                
             </nav>
         </header>
     
