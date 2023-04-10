@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Kanit:wght@300&display=swap');
+
+.container_home h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    font-family: 'Kanit', sans-serif;
+}
+.box{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.box li{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 400px;
+}
+.box img{
+    border-radius: 10px 10px 0 0 ;
+}
+.box strong{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    padding: 3px;
+}
+.box span{
+    display: flex;
+    padding: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 80%;
+}
+.box button{
+    color: #3D8833;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #3D8833;
+    background-color: transparent;
+    transition: 0.3s;
+    font-family: 'Kanit', sans-serif;
+}
+.box button:hover{
+    background-color: #3D8833;
+    color: #fff;
+}
+.box button:disabled{
+    color: red;
+    border: 1px solid red;
+    cursor: no-drop;
+}
+.box button:disabled:hover{
+    background-color: #fff;
+}
+.box .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.box .buttons button{
+    width: 100%;
+}
+@media screen and (max-width: 730px) {
+    .box{
+        flex-direction: column;
+    }
+    .box li{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 350px;
+    }
+}

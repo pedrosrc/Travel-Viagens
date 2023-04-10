@@ -1,12 +1,13 @@
-import { BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import Nav from "./services/Nav";
 import Header from './components/Header/Header';
+
 function App() {
-  
+
   return (
     <BrowserRouter>
-      <Header/>
-      <Nav/>
+      <Header />
+      <Nav />
     </BrowserRouter>
   )
 }
