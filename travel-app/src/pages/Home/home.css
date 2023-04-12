@@ -65,6 +65,14 @@
 .box .buttons button{
     width: 100%;
 }
+.box .amounts{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.box .amounts button{
+    border: none;
+}
 @media screen and (max-width: 730px) {
     .box{
         flex-direction: column;
