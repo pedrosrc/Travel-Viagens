@@ -24,9 +24,17 @@ export function removeReserve(id: Props){
     })
 }
 
-export function updateReserve(id:any, amount:any, price:any){
+export function updateReserveRequest(id:any, amount:any, price:any){
     return({
-        type: 'UPDATE_RESERVE',
+        type: 'UPDATE_RESERVE_REQUEST',
+        id,
+        amount,
+        price,
+    })
+}
+export function updateReserveSuccess(id:any, amount:any, price:any){
+    return({
+        type: 'UPDATE_RESERVE_SUCCESS',
         id,
         amount,
         price,

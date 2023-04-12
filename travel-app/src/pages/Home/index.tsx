@@ -19,7 +19,8 @@ export default function Home(){
     }, []);
 
     async function handleAdd(id: any){
-        dispatch(addReserveRequest(id))
+        dispatch(addReserveRequest(id));
+        
     }
 
     return(

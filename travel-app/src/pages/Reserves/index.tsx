@@ -1,7 +1,7 @@
 import '../Home/home.css'
 import { AiFillStar, AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 import { BsTrash3Fill } from 'react-icons/bs'
-import { removeReserve, updateReserve } from '../../store/modules/reserves/actions'
+import { removeReserve, updateReserveRequest } from '../../store/modules/reserves/actions'
 import { useSelector, useDispatch } from 'react-redux'
 
 export default function Reserves() {
@@ -14,17 +14,18 @@ export default function Reserves() {
     }
 
     function minusAmount(trip:any){
-        dispactch(updateReserve(trip.id, trip.amount - 1,  trip.price/trip.amount*(trip.amount-1)))
+        dispactch(updateReserveRequest(trip.id, trip.amount - 1,  trip.price/trip.amount*(trip.amount-1)))
     } 
     
     function plusAmount(trip:any){
-        dispactch(updateReserve(trip.id, trip.amount + 1,  trip.price/trip.amount*(trip.amount+1)))
+        dispactch(updateReserveRequest(trip.id, trip.amount + 1,  trip.price/trip.amount*(trip.amount+1)))
     }
 
     return (
         <div className="container_home">
             <h1>Reservas</h1>
             <div className='box'>
+                {reserves.length === 0 && <div><span>Você não possui nenhuma viagem no carrinho!</span></div>}
                 {reserves.map((reserve: any) => (
                     <li key={reserve.id}>
                         <img src={reserve.image} alt="foto de paisagem" />

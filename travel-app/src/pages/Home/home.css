@@ -73,6 +73,30 @@
 .box .amounts button{
     border: none;
 }
+.box_sobre{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #3D8833;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 4px 1px #000;
+    flex-direction: column;
+}
+.box_sobre p{
+    font-size: 22px;
+    font-family: 'Kanit';
+}
+.box_sobre .medias{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box_sobre .medias a{
+    margin: 015px;
+}
 @media screen and (max-width: 730px) {
     .box{
         flex-direction: column;
@@ -81,5 +105,9 @@
         margin: auto;
         margin-bottom: 20px;
         width: 350px;
+    }
+    .box_sobre{
+        text-align: center;
+        width: 300px;
     }
 }
