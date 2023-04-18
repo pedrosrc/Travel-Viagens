@@ -20,6 +20,7 @@
       "status": true,
       "note" : 4.8,
       "price": 250,
+      "description": "Maceió é a capital do estado de Alagoas, localizada na região Nordeste do Brasil, conhecida por suas praias paradisíacas, águas cristalinas e recifes de corais. Uma viagem para Maceió é uma excelente opção para quem busca tranquilidade, belezas naturais e uma experiência cultural única. Durante a viagem, os turistas podem visitar as praias mais famosas da região, como a Praia do Francês, a Praia de Ponta Verde e a Praia do Gunga. Além disso, é possível fazer passeios de barco para conhecer as piscinas naturais de Pajuçara e mergulhar nos recifes de corais.",
       "image": "https://sujeitoprogramador.com/wp-content/uploads/2019/12/maceio.jpg"
     },
     {
@@ -28,6 +29,7 @@
       "status": true,
       "note" : 4.9,
       "price": 750,
+      "description": "O Caribe é uma região composta por diversas ilhas e países, localizada no mar do Caribe. Uma viagem para o Caribe é uma oportunidade única de conhecer praias paradisíacas, águas cristalinas e uma rica cultura local. Durante a viagem, os turistas podem visitar destinos famosos como Punta Cana, na República Dominicana, Cancún, no México, e as Ilhas Cayman. Além disso, é possível praticar atividades como mergulho, snorkeling, passeios de barco e muito mais.",
       "image": "https://sujeitoprogramador.com/wp-content/uploads/2019/12/caribe.jpg"
     },
     {
@@ -36,6 +38,7 @@
       "status": false,
       "note" : 4.9,
       "price": 450,
+      "description": "Fernando de Noronha é um arquipélago localizado a cerca de 540 km da costa brasileira, composto por 21 ilhas e ilhotas. Uma viagem para Fernando de Noronha é uma oportunidade única de conhecer uma das mais belas paisagens naturais do mundo, com praias de águas cristalinas, vida marinha exuberante e uma rica história cultural. Durante a viagem, os turistas podem visitar praias famosas como a Baía do Sancho, eleita diversas vezes como a melhor praia do mundo, e a Praia do Leão, onde as tartarugas marinhas desovam. Além disso, é possível fazer trilhas para conhecer as belezas naturais da ilha, como a Pedra do Leão e o Mirante dos Golfinhos.",
       "image": "https://sujeitoprogramador.com/wp-content/uploads/2019/12/fernand-noronha.jpg"
     }
   ]

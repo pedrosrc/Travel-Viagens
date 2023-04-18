@@ -45,6 +45,13 @@
     transition: 0.3s;
     font-family: 'Kanit', sans-serif;
 }
+.box button a{
+    text-decoration: none;
+    color: #3D8833;
+}
+.box button a:hover{
+    color: #fff;
+}
 .box button:hover{
     background-color: #3D8833;
     color: #fff;

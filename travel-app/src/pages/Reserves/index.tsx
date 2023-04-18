@@ -3,6 +3,7 @@ import { AiFillStar, AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 import { BsTrash3Fill } from 'react-icons/bs'
 import { removeReserve, updateReserveRequest } from '../../store/modules/reserves/actions'
 import { useSelector, useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 export default function Reserves() {
 
@@ -40,7 +41,8 @@ export default function Reserves() {
                         </div>
                         
                         <div className='buttons'>
-                            <button>Mais Detalhes</button>
+                            
+                            <button><Link to={`/trip/${reserve.id}`}>Mais Detalhes</Link></button>
                             <button onClick={() => handleDelete(reserve.id)}><BsTrash3Fill /></button>
                         </div>
                     </li>
