@@ -10,17 +10,18 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 .box li{
-    margin: 0 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     list-style: none;
     width: 400px;
 }
 .box img{
-    border-radius: 10px 10px 0 0 ;
+    height: 250px;
 }
 .box strong{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

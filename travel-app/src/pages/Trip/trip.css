@@ -47,3 +47,15 @@
     background-color:#3D8833;
     color: #fff;
 }
+@media screen and (max-width: 710px) {
+    .container_tr{
+        margin-top: 0;
+    }
+    .container_tr img{
+        width: 500px;
+        border-radius: 0px;
+    }
+    .box_info button{
+        margin-top: 20px;
+    }
+}
