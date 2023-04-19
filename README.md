@@ -1,5 +1,5 @@
 <h1 align="center": center">Travel</h1>
-<img src="./img/cinewacth.png" width="1000" align="center">
+<img src="./img/travel.JPG" width="1000" align="center">
 
 <h2>💡A ideia de criar foi:</h2>
 <ul>
