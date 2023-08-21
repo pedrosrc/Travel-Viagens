@@ -1,18 +1,23 @@
 <h1 align="center": center">Travel</h1>
-<img src="./img/travel.jpg" width="1000" align="center">
+<h2>Home:</h2>
+<img src="./img/dashboard.PNG" width="800" align="center">
+<h2>Details:</h2>
+<img src="./img/trip.PNG" width="800" align="center">
+<h2>Cart:</h2>
+<img src="./img/cart.PNG" width="800" align="center">
 
-<h2>💡A ideia de criar foi:</h2>
+<h2>💡The idea of creating was:</h2>
 <ul>
-  <li>Apresentar meus conhecimentos</li>
-  <li>Ajudar quem necessita de ajuda</li>
+  <li>Presenting my knowledge.</li>
+  <li>Helping those in need of assistance.</li>
 </ul>
-<h2>⚙️Tecnologias Usadas:</h2>
+<h2>⚙️Used Technologies:</h2>
 <ul>
-  <li>Node JS</li>
-  <li>TypeScriptt</li>
-  <li>ReactJS</li>
+  <li>Node.Js</li>
+  <li>TypeScript</li>
+  <li>React.JS</li>
 </ul>
-<h2>Métodos Usados:</h2>
+<h2>Methods Useds:</h2>
 <ul>
   <li>Hooks</li>
   <li>Axios(API)</li>
