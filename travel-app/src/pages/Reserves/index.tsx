@@ -26,7 +26,7 @@ export default function Reserves() {
         <div className="container_home">
             <h1>Reservas</h1>
             <div className='box'>
-                {reserves.length === 0 && <div><span>Você não possui nenhuma viagem no carrinho!</span></div>}
+                {reserves.length === 0 && <div className='pending'><span>Você não possui nenhuma viagem no carrinho!</span></div>}
                 {reserves.map((reserve: any) => (
                     <li key={reserve.id}>
                         <img src={reserve.img} alt="foto de paisagem" />

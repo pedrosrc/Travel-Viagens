@@ -105,6 +105,17 @@
 .box_sobre .medias a{
     margin: 015px;
 }
+.text{
+    margin: auto;
+    justify-content: center;
+}
+.pending{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 300px;
+}
 @media screen and (max-width: 730px) {
     .box{
         flex-direction: column;
