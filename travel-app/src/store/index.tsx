@@ -1,6 +1,5 @@
 import{legacy_createStore as createStore, applyMiddleware} from 'redux'
 import createSagaMiddleware from 'redux-saga'
-//import { createStore } from '@reduxjs/toolkit'
 import rootReducer from './modules/rootReducer';
 import rootSaga  from './rootSaga';
 

@@ -13,16 +13,14 @@ export default function Home(){
         async function loadApi() {
             const response = await api.get('trips')
             setTrips(response.data);
+            
         }
         loadApi();
     }, []);
 
     async function details(id: any) {
-        navigate(`/trip/${id}`)
-        
+        navigate(`/trips/${id}`)
     }
-
-    
 
     return(
         <div className="container_home">
@@ -30,13 +28,13 @@ export default function Home(){
             <div className="box">
                 {trips.map(trip =>(
                     <li key={trip.id}>
-                        <img src={trip.image} alt={trip.title}/>
+                        <img src={trip.img} alt={trip.title}/>
                         <strong>{trip.title}</strong>
                         <strong><AiFillStar/>{trip.note}</strong>
                         <span>{trip.status ? <AiFillAlert  color="green"/>: <AiFillAlert color="red"/>} {trip.status ? 'Disponivel': 'Indisponivel'}</span>
                         
                         <span>R$ {trip.price},00 p/ noite.</span>
-                        <button disabled={trip.status === false} onClick={() => details(trip.id)}>{trip.status ? 'Mais Detalhes' : 'Indisponivel' }</button>
+                        <button disabled={trip.status === 0} onClick={() => details(trip.id)}>{trip.status ? 'Mais Detalhes' : 'Indisponivel' }</button>
                     </li>
                 ))}
             </div>

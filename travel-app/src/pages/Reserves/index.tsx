@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 
 export default function Reserves() {
 
-    const reserves: any = useSelector<any>(state => state.reserve)
+    const reserves = useSelector((state:any) => state.reserve);
     const dispactch = useDispatch();
 
     function handleDelete(id: any) {
         dispactch(removeReserve(id))
     }
 
-    function minusAmount(trip:any){
+    function minusAmount(trip: any){
         dispactch(updateReserveRequest(trip.id, trip.amount - 1,  trip.price/trip.amount*(trip.amount-1)))
     } 
     
@@ -29,7 +29,7 @@ export default function Reserves() {
                 {reserves.length === 0 && <div><span>Você não possui nenhuma viagem no carrinho!</span></div>}
                 {reserves.map((reserve: any) => (
                     <li key={reserve.id}>
-                        <img src={reserve.image} alt="foto de paisagem" />
+                        <img src={reserve.img} alt="foto de paisagem" />
                         <strong>{reserve.title}</strong>
                         <strong><AiFillStar />{reserve.note}</strong>
                         <span>R$ {reserve.price},00</span>

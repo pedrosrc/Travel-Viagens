@@ -9,7 +9,7 @@ export default function Nav(){
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/reservas" element={<Reserves/>}/>
-            <Route path="/trip/:id" element={<Trip/>} />
+            <Route path="/trips/:id" element={<Trip/>} />
             <Route path="/sobre" element={<Sobre/>}/>
                 
         </Routes>

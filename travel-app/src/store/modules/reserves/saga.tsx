@@ -6,13 +6,12 @@ import api from "../../../services/api";
 function* addToReserve({id}:any):any{ 
 
     const tripExists:any = yield select(
-        state=> state.reserve.find((trip:any) => trip.id === id)
+        state => state.reserve.find((trip:any) => trip.id === id)
     );
-
 
     //---Consultando Estoque-----  
       
-    const myStock= yield call(api.get, `stock/${id}`)
+    const myStock= yield call(api.get, `trips/${id}`)
 
     const stockAmount = myStock.data.amount;
 
@@ -30,7 +29,6 @@ function* addToReserve({id}:any):any{
 
         const price = tripExists.price/tripExists.amount *(tripExists.amount + 1);
     
-
         yield put(updateReserveSuccess(id, amount, price));
     }else{
         const response = yield call(api.get, `trips/${id}`);
@@ -50,7 +48,7 @@ function* updateAmount({id, amount, price}:any):any{
 
     //---Consultando Estoque no Carrinho-----  
       
-    const myStock= yield call(api.get, `stock/${id}`)
+    const myStock = yield call(api.get, `trips/${id}`)
 
     const stockAmount = myStock.data.amount;
     if(amount > stockAmount){
@@ -65,5 +63,4 @@ function* updateAmount({id, amount, price}:any):any{
 export default all([
     takeLatest('ADD_RESERVE_REQUEST', addToReserve),
     takeLatest('UPDATE_RESERVE_REQUEST', updateAmount),
-
 ]);

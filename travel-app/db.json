@@ -1,23 +1,10 @@
 {
-  "stock": [
-    {
-      "id": 1,
-      "amount": 10
-    },
-    {
-      "id": 4,
-      "amount": 5
-    },
-    {
-      "id": 22,
-      "amount": 3
-    }
-  ],
   "trips": [
     {
       "id": 1,
       "title": "Viagem Rio de Janeiro",
       "status": true,
+      "amount": 5,
       "note" : 4.8,
       "price": 550,
       "description": "O Rio de Janeiro é uma das cidades mais famosas e vibrantes do mundo, conhecida por suas belas praias, vida noturna agitada, rica cultura e história fascinante. Localizado na costa leste do Brasil, o Rio de Janeiro é o lar de alguns dos pontos turísticos mais famosos do país, incluindo o Cristo Redentor, o Pão de Açúcar, as praias de Copacabana e Ipanema, e o histórico bairro de Santa Teresa. A cidade também é conhecida por suas festas animadas, especialmente durante o Carnaval, quando milhares de turistas visitam o Rio para participar da maior festa do mundo. ",
@@ -28,6 +15,7 @@
       "title": "Viagem Caribe",
       "status": true,
       "note" : 4.9,
+      "amount": 10,
       "price": 950,
       "description": "O Caribe é uma região composta por diversas ilhas e países, localizada no mar do Caribe. Uma viagem para o Caribe é uma oportunidade única de conhecer praias paradisíacas, águas cristalinas e uma rica cultura local. Durante a viagem, os turistas podem visitar destinos famosos como Punta Cana, na República Dominicana, Cancún, no México, e as Ilhas Cayman. Além disso, é possível praticar atividades como mergulho, snorkeling, passeios de barco e muito mais.",
       "image": "https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -37,6 +25,7 @@
       "title": "Viagem Machu Pichu, Peru",
       "status": false,
       "note" : 4.9,
+      "amount": 3,
       "price": 1250,
       "description": "Machu Picchu é uma cidade antiga dos Incas localizada no topo de uma montanha nos Andes peruanos. É considerado um dos locais arqueológicos mais impressionantes e bem preservados do mundo, com uma história fascinante e vistas deslumbrantes.De Aguas Calientes, os visitantes podem subir a montanha a pé ou de ônibus até a entrada de Machu Picchu. Uma vez dentro do sítio arqueológico, os turistas podem explorar as ruínas incríveis, que incluem templos, terraços agrícolas e edifícios residenciais, além de vistas espetaculares dos Andes.",
       "image": "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -46,6 +35,7 @@
       "title": "Viagem São Paulo",
       "status": true,
       "note" : 4.7,
+      "amount": 3,
       "price": 580,
       "description": "São Paulo é uma cidade incrível e uma das maiores metrópoles do mundo. Localizada no sudeste do Brasil, é um centro financeiro, cultural e turístico importante do país. A cidade oferece uma ampla variedade de atrações turísticas, incluindo museus, teatros, parques, restaurantes, bares e vida noturna agitada. Algumas das atrações mais populares incluem o Museu de Arte de São Paulo (MASP), o Parque do Ibirapuera, o Mercado Municipal, o bairro da Liberdade (com sua forte influência japonesa), a Avenida Paulista e a Rua Oscar Freire (com suas lojas de grife).",
       "image": "https://images.pexels.com/photos/5048195/pexels-photo-5048195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -55,9 +45,20 @@
       "title": "Viagem Salvador, Bahia",
       "status": true,
       "note" : 4.9,
+      "amount": 10,
       "price": 480,
       "description": "Salvador, na Bahia, é uma cidade vibrante e rica em cultura, história e belezas naturais. Conhecida como a capital da alegria, Salvador é um destino turístico popular, famoso por suas praias de águas cristalinas, música e dança, culinária saborosa e arquitetura colonial. Os turistas podem desfrutar de atividades como caminhar pelo Pelourinho, o centro histórico de Salvador, que é Patrimônio Mundial da UNESCO e está repleto de igrejas barrocas, casarões coloridos, lojas de artesanato e restaurantes. Outra atração imperdível é o Mercado Modelo, um mercado animado que vende produtos locais como roupas, artesanato, comidas e bebidas típicas da Bahia.",
       "image": "https://images.pexels.com/photos/13435510/pexels-photo-13435510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 41,
+      "title": "Viagem Jericoacoara, Ceará",
+      "status": true,
+      "note" : 4.9,
+      "amount": 5,
+      "price": 780,
+      "description": "Jericoacoara, frequentemente referida como 'Jeri', é um famoso destino turístico localizado no estado do Ceará, nordeste do Brasil. Originalmente uma vila de pescadores isolada, Jericoacoara se tornou um destino popular devido às suas praias deslumbrantes, paisagens naturais únicas e atmosfera relaxante. A região é conhecida por suas dunas de areia branca, lagoas de água doce, coqueiros e formações rochosas impressionantes. Entre os pontos de destaque estão a Duna do Pôr do Sol, um local icônico para assistir ao espetacular pôr do sol sobre o Oceano Atlântico, e a Lagoa do Paraíso, com suas águas cristalinas e tons de azul e verde deslumbrantes. ",
+      "image": "https://images.pexels.com/photos/6889711/pexels-photo-6889711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }
