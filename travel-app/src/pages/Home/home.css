@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    border-radius: 20px;
 }
 .box li{
     margin: 20px;
@@ -19,9 +19,16 @@
     flex-direction: column;
     list-style: none;
     width: 400px;
+    transition: .4s;
+    border-radius: 20px;
 }
-.box img{
+.box li:hover{
+    transform: translate(-1px,-3px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.box .image{
     height: 250px;
+    opacity: 100%;
 }
 .box strong{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -45,10 +52,12 @@
     background-color: transparent;
     transition: 0.3s;
     font-family: 'Kanit', sans-serif;
+    border-radius: 20px;
 }
 .box button a{
     text-decoration: none;
     color: #3D8833;
+    
 }
 .box button a:hover{
     color: #fff;
@@ -56,6 +65,7 @@
 .box button:hover{
     background-color: #3D8833;
     color: #fff;
+    border-radius: 0;
 }
 .box button:disabled{
     color: red;
@@ -63,7 +73,8 @@
     cursor: no-drop;
 }
 .box button:disabled:hover{
-    background-color: #fff;
+    background-color: red;
+    color: #fff;
 }
 .box .buttons{
     display: flex;
@@ -72,6 +83,18 @@
 }
 .box .buttons button{
     width: 100%;
+    color: #3D8833;
+    border-radius: 0;
+}
+.box .buttons .button_1{
+    border-bottom-left-radius: 20px;
+}
+.box .buttons .button_2{
+    border-bottom-right-radius: 20px;
+}
+.box .buttons button:hover, .box .buttons button:hover a{
+    width: 100%;
+    color: #fff;
 }
 .box .amounts{
     display: flex;
@@ -105,6 +128,7 @@
 .box_sobre .medias a{
     margin: 015px;
 }
+
 .text{
     margin: auto;
     justify-content: center;

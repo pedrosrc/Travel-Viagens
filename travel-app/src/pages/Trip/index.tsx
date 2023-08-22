@@ -33,7 +33,7 @@ export default function Trip() {
 
     return (
         <div className="container_tr">
-            <img src={trip.img} alt="foto de praia" />
+            <img src={trip.img} alt="foto de praia" loading="lazy" />
             <div className="box_info">
                 <h1>{trip.title}</h1>
                 <div className="details">

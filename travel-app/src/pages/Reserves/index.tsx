@@ -26,9 +26,10 @@ export default function Reserves() {
         <div className="container_home">
             <h1>Reservas</h1>
             <div className='box'>
-                {reserves.length === 0 && <div className='pending'><span>Você não possui nenhuma viagem no carrinho!</span></div>}
+                {reserves.length === 0 && <div className='text'><span>Você não possui nenhuma viagem no carrinho!</span></div>}
                 {reserves.map((reserve: any) => (
                     <li key={reserve.id}>
+                        
                         <img src={reserve.img} alt="foto de paisagem" />
                         <strong>{reserve.title}</strong>
                         <strong><AiFillStar />{reserve.note}</strong>
@@ -41,9 +42,8 @@ export default function Reserves() {
                         </div>
                         
                         <div className='buttons'>
-                            
-                            <button><Link to={`/trip/${reserve.id}`}>Mais Detalhes</Link></button>
-                            <button onClick={() => handleDelete(reserve.id)}><BsTrash3Fill /></button>
+                            <button className='button_1'><Link to={`/trip/${reserve.id}`}>Mais Detalhes</Link></button>
+                            <button className='button_2' onClick={() => handleDelete(reserve.id)}><BsTrash3Fill /></button>
                         </div>
                     </li>
                 ))}

@@ -19,7 +19,7 @@ export default function Home() {
             }
             loadApi();
         })
-    }, []);
+    }, [startTransition]);
 
     async function details(id: any) {
         navigate(`/trips/${id}`)
@@ -32,7 +32,7 @@ export default function Home() {
                 <div className="box">
                 {trips.map(trip => (
                     <li key={trip.id}>
-                        <img src={trip.img} alt={trip.title} />
+                        <img src={trip.img} alt={trip.title} className='image' />
                         <strong>{trip.title}</strong>
                         <strong><AiFillStar />{trip.note}</strong>
                         <span>{trip.status ? <AiFillAlert color="green" /> : <AiFillAlert color="red" />} {trip.status ? 'Disponivel' : 'Indisponivel'}</span>
