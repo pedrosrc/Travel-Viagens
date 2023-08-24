@@ -13,11 +13,17 @@ export default function Home() {
 
     useEffect(() => {
         async function loadApi() {
-            const response = await api.get('trips');
-            setTrips(response.data);
+            await api.get('trips')
+            .then((response)=>{
+                setTrips(response.data)
+            })
+            .catch((error)=>{
+                console.log(error)
+            });
         }
         loadApi();
     }, [setTrips]);
+
 
     async function details(id: any) {
         navigate(`/trips/${id}`)
