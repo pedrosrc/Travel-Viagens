@@ -10,46 +10,49 @@ export default function Home() {
 
     const navigate = useNavigate();
     const [trips, setTrips] = useState<any[]>([]);
-    const [isPending, startTransition] = useTransition();
+    const [loading, setLoading] = useState<boolean>(false)
 
     useEffect(() => {
         async function loadApi() {
             await api.get('trips')
                 .then((response) => {
-                    startTransition(() => {
-                        setTrips(response.data)
-                    });
+                    setTrips(response.data)
+                    setLoading(true)
                 })
                 .catch((error) => {
                     console.log(error)
                 });
         }
-        loadApi();
-    }, [setTrips]);
+        loadApi()
+    }, []);
 
     async function details(id: any) {
         navigate(`/trips/${id}`)
     }
 
+    if (!loading) {
+        return (
+            <div className="container_home">
+                <Skelect />
+            </div>
+        )
+    }
+
     return (
         <div className="container_home">
             <h1>Viagens</h1>
-            {isPending ? (
-                <Skelect />
-            ) : (
-                <div className="box">
-                    {trips.map(trip => (
-                        <li key={trip.id}>
-                            <img src={trip.img} alt={trip.title} className='image' />
-                            <strong>{trip.title}</strong>
-                            <strong><AiFillStar />{trip.note}</strong>
-                            <span>{trip.status ? <AiFillAlert color="green" /> : <AiFillAlert color="red" />} {trip.status ? 'Disponivel' : 'Indisponivel'}</span>
-                            <span>R$ {trip.price},00 p/ noite.</span>
-                            <button disabled={trip.status === 0} onClick={() => details(trip.id)}>{trip.status ? 'Mais Detalhes' : 'Indisponivel'}</button>
-                        </li>
-                    ))}
-                </div>
-            )}
+            <div className="box">
+                {trips.map(trip => (
+                    <li key={trip.id}>
+                        <img src={trip.img} alt={trip.title} className='image' />
+                        <strong>{trip.title}</strong>
+                        <strong><AiFillStar />{trip.note}</strong>
+                        <span>{trip.status ? <AiFillAlert color="green" /> : <AiFillAlert color="red" />} {trip.status ? 'Disponivel' : 'Indisponivel'}</span>
+                        <span>R$ {trip.price},00 p/ noite.</span>
+                        <button disabled={trip.status === 0} onClick={() => details(trip.id)}>{trip.status ? 'Mais Detalhes' : 'Indisponivel'}</button>
+                    </li>
+                ))}
+            </div>
         </div>
     )
 }
