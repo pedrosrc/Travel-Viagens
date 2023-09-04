@@ -1,0 +1,29 @@
+.skeleton-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.skeleton-container li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item-group{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 400px;
+    transition: .4s;
+    border-radius: 20px;
+}
+@media screen and (max-width: 730px) {
+    .item-group{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 350px;
+    }
+    
+}
