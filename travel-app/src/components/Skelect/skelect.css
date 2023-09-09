@@ -1,9 +1,11 @@
 .skeleton-container{
-    margin-top: 30px;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-radius: 20px;
+    position: absolute;
+    margin-top: 30px;
+    left: 10%;
 }
 .skeleton-container li{
     display: flex;
@@ -19,7 +21,15 @@
     transition: .4s;
     border-radius: 20px;
 }
+@media screen and (max-width: 1400px) {
+    .skeleton-container{
+        left: 2%;
+    }
+}
 @media screen and (max-width: 730px) {
+    .skeleton-container{
+        left: 0;
+    }
     .item-group{
         margin: auto;
         margin-bottom: 20px;
