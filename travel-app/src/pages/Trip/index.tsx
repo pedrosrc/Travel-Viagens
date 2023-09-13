@@ -19,6 +19,7 @@ export default function Trip() {
             await api.get(`trips/${id}`)
                 .then((response) => {
                     setTrip(response.data)
+                    console.log(response.data)
                 })
                 .catch((error) => {
                     console.log(error)
@@ -34,7 +35,7 @@ export default function Trip() {
 
     return (
         <div className="container_tr">
-            <img src={trip.img || <Skeleton height={200} />} alt="foto de praia" loading="lazy" />
+            <img src={trip.img || <Skeleton height={200} />} alt="foto de paisagem" />
             <div className="box_info">
                 <h1>{trip.title || <Skeleton count={1} />}</h1>
                 <div className="details">
