@@ -16,7 +16,7 @@
   <li>Node.Js</li>
   <li>TypeScript</li>
   <li>React.JS</li>
-  <li>MySQL</li>
+  <li>PostgreSQL</li>
 </ul>
 <h2>Methods Useds:</h2>
 <ul>
